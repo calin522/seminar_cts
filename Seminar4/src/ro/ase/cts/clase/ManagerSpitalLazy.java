@@ -4,15 +4,15 @@ public class ManagerSpitalLazy {
 	private String nume;
 	private int varsta;
 	private int marca;
-	
-private static ManagerSpitalLazy instanta = null;
 
-public static ManagerSpitalLazy getInstance(String nume, int varsta, int marca) {
-	if(instanta==null) {
-		instanta = new ManagerSpitalLazy(nume,varsta,marca);
+	private static ManagerSpitalLazy instanta = null;
+
+	public static ManagerSpitalLazy getInstance(String nume, int varsta, int marca) {
+		if (instanta == null) {
+			instanta = new ManagerSpitalLazy(nume, varsta, marca);
+		}
+		return instanta;
 	}
-	return instanta;
-}
 
 	private ManagerSpitalLazy(String nume, int varsta, int marca) {
 		super();
@@ -43,5 +43,6 @@ public static ManagerSpitalLazy getInstance(String nume, int varsta, int marca) 
 		builder.append(", marca=");
 		builder.append(marca);
 		builder.append("]");
-		return builder.toString();}
+		return builder.toString();
+	}
 }

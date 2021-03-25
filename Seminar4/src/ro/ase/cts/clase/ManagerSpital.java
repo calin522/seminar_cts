@@ -4,9 +4,9 @@ public class ManagerSpital {
 	private String nume;
 	private int varsta;
 	private int marca;
-	
+
 	private static ManagerSpital manager = new ManagerSpital("Georgel", 58, 3298);
-	
+
 	public static ManagerSpital getInstance() {
 		return manager;
 	}
@@ -40,5 +40,6 @@ public class ManagerSpital {
 		builder.append(", marca=");
 		builder.append(marca);
 		builder.append("]");
-		return builder.toString();}
+		return builder.toString();
+	}
 }
