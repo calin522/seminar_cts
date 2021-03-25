@@ -5,7 +5,7 @@ public class FactoryAtacant implements Factory {
 	@Override
 	public Jucator createJucator(String nume) {
 		// TODO Auto-generated method stub
-		return new Portar(nume);
+		return new Atacant(nume);
 	}
 
 }
