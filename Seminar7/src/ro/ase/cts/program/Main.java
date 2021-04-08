@@ -8,7 +8,7 @@ import ro.ase.cts.clase.Politie;
 
 public class Main {
  public static void main(String[] args) {
-	 Persoana p1= new Persoana("Adi", "122190240198211");
+	 Persoana p1= new Persoana("Adi", "1221902401923");
 	Bilet b1 = new Bilet("Adi","2B");
 	System.out.println(p1);
 	System.out.println(b1);
@@ -21,7 +21,7 @@ public class Main {
 		 }
 	 }
 	 
-	 Persoana p2= new Persoana("Maria", "122240240178244");
+	 Persoana p2= new Persoana("Maria", "122240240178");
 		Bilet b2 = new Bilet("Adi","7B");
 		
 		if(Facade.sePermiteAccesulPeStadion(p2,b2))
