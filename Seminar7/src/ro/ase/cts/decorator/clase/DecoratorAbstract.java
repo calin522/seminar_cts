@@ -21,4 +21,10 @@ public class DecoratorAbstract implements BiletAbstract {
 		this.biletAbstract = biletAbstract;
 	}
 
+	@Override
+	public String getNumeGazda() {
+
+		return biletAbstract.getNumeGazda();
+	}
+
 }

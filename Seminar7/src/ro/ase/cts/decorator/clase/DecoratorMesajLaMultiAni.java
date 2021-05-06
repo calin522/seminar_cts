@@ -10,7 +10,7 @@ public class DecoratorMesajLaMultiAni extends DecoratorAbstract {
 	@Override
 	public void rezervaBilet() {
 		super.rezervaBilet();
-		System.out.println("La multi ani " + ((Bilet)super.getBiletAbstract()).getNumeGazda());
+		System.out.println("La multi ani " + (getBiletAbstract()).getNumeGazda());
 	}
 
 
