@@ -2,31 +2,15 @@ package ro.ase.cts.observer.clase;
 
 public class Client implements Observer {
 
-	private String nume;
-	private String mesaj;
-	
-	
+    private String nume;
 
 
-	public Client(String nume) {
-		super();
-		this.nume = nume;
-	}
+    public Client(String nume) {
+        this.nume = nume;
+    }
 
-	@Override
-	public void primesteNotificare() {
-		System.out.println("Clientul" + nume +  "primeste notificarea" + mesaj);
-		
-	}
-
-	@Override
-	public void add(Observer observer) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
-	
-	
-
+    @Override
+    public void primesteNotificare(String mesaj) {
+        System.out.println("CLientul " + nume + " a primit notificarea " + mesaj);
+    }
 }
