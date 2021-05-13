@@ -10,13 +10,13 @@ public class Program {
 
         ManagerSala managerSala = new ManagerSala();
 
-        Observer c1 = new Client("Ionel");
-        Observer c2 = new Client("Gigel");
-        managerSala.adaugaObserver(c1);
-        managerSala.adaugaObserver(c2);
+        Observer client1 = new Client("Andrei");
+        Observer client2 = new Client("Calin");
+        managerSala.adaugaObserver(client2);
+        managerSala.adaugaObserver(client1);
 
         managerSala.anuntaMeciFotbal();
-        managerSala.stergereObserver(c2);
+        managerSala.stergereObserver(client1);
         System.out.println();
         managerSala.anuntaMeciFotbal();
 
