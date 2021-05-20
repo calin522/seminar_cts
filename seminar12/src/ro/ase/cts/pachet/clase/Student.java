@@ -8,7 +8,6 @@ public class Student {
 	private List<Integer> note;
 
 	public Student(String nume) {
-		// this.nume = nume;
 		this.nume = nume;
 		this.note = new ArrayList<>();
 	}
@@ -31,7 +30,11 @@ public class Student {
 	}
 
 	public void adaugaNota(int nota) {
-		note.add(nota);
+		if (nota < 1 || nota <= 10) {
+			note.add(nota);
+		} else {
+			throw new IllegalArgumentException();
+		}
 	}
 
 	public int getNota(int index) {
